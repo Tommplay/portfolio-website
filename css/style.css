@@ -89,6 +89,12 @@ a:focus {
   background-color: #ff7f50;
   color: #ffffff;
 }
+header {
+  background-color: #ffffff;
+}
+.social-icon {
+  width: 25px;
+}
 
 /*
 colours used:
