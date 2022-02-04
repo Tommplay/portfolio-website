@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #576672;
   font-family: 'Quicksand', sans-serif;
@@ -33,68 +37,147 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 img {
   width: 100%;
 }
+
 a {
   color: #20313F;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
+
 a:hover {
   color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #20313F;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #994c30;
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
+
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
 }
+
 .button.cv {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
+
 .button.cv:hover {
   background-color: #ff7f50;
   color: #ffffff;
 }
+
 header {
   background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0px;
+  /* Adds a 10px inner spacing to all sides */
+  /* padding: 10px 5px; Adds 10px to top & bottom and 5px to left and right */
+  /* padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+  -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.53);
+-moz-box-shadow:    0px 6px 0px 0px rgba(0, 0, 0, 0.53);
+box-shadow:         0px 6px 0px 0px rgba(0, 0, 0, 0.53);
+  position: fixed;
+  width: 100%
 }
+
 .social-icon {
-  width: 25px;
+  width: 40px;
+  display: inline-block;
 }
+
+.logo {
+  width: 250px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav:hover {
+  color: #cc6540;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+nav:visited {
+  /* visited link */
+  color: #20313F;
+}
+
+nav:active {
+  /* selected link */
+  color: #994c30;
+}
+
+#hero {
+  background-color: #;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
 
 /*
 colours used:
@@ -104,3 +187,25 @@ another dark blue: #112535;
 cream: #858055;
 brown: #332D02;
 */
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero h3 {
+  text-align: center;
+  /* Centers text */
+}
+main {
+  padding-top: 133px;
+}
