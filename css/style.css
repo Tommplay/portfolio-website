@@ -31,6 +31,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  color: #858055;
 }
 
 h4 {
@@ -40,6 +41,9 @@ h4 {
 
 img {
   width: 100%;
+
+max-width: 100%;
+height: auto;
 }
 
 a {
@@ -77,6 +81,7 @@ a:focus {
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
@@ -87,7 +92,6 @@ a:focus {
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
 }
 
 .button.contact {
@@ -121,7 +125,7 @@ header {
   /* Adds a 10px inner spacing to all sides */
   /* padding: 10px 5px; Adds 10px to top & bottom and 5px to left and right */
   /* padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
-  margin: 10px;
+  margin: 0;
   border-bottom: 3px solid #4a4a4a;
   -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.53);
@@ -129,20 +133,24 @@ header {
   position: fixed;
   width: 100%
 }
+
 .social-icons {
   list-style: none;
   padding: 0px;
 }
+
 .social-icons li {
   display: inline-block;
   margin: 0px 10px;
 }
-.social-icons img{
+
+.social-icons img {
   width: 40px;
 }
 
 .logo {
   width: 250px;
+  padding: 10px 0px 0px 8px;
 }
 
 nav>ul {
@@ -152,6 +160,7 @@ nav>ul {
 
 nav>ul>li {
   display: inline-block;
+  padding: 0 15px;
 }
 
 nav>ul>li>a {
@@ -184,6 +193,28 @@ nav:active {
   width: 100%;
 }
 
+/* animating a picture */
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 /*
 colours used:
 dark blue: #20313F;
@@ -199,7 +230,13 @@ brown: #332D02;
 
 .row {
   margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
+}
+
+/* 25px top and bottom, 0 left and right */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #hero h1 {
@@ -211,10 +248,12 @@ brown: #332D02;
   text-align: center;
   /* Centers text */
 }
+
 #hero h4 {
   text-align: center;
   /* Centers text */
 }
+
 main {
   padding-top: 133px;
 }
@@ -233,22 +272,59 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
   main {
     padding-top: 99px;
   }
+
   #hero {
     font-size: 18px;
     line-height: 1.6;
   }
+
   #hero span {
-  display: block;
-}
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+
+  #about-page h3 {
+    margin-top: 4;
+  }
+
+  #about-page h4
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+    float: left;
+  }
+
+  .col-lg-5 {
+    width: 41.67%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #index-page h3 {
+    margin-top: 0;
+  }
+}
 
 /* ==============================
 X-large devices (1440px or larger)
