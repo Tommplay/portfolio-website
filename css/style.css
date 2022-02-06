@@ -314,6 +314,10 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 41.67%;
   }
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
 
   .container {
     max-width: 1200px;
@@ -322,6 +326,12 @@ Large devices (1024px or larger)
   }
 
   #index-page h3 {
+    margin-top: 0;
+  }
+  #about-page h3 {
+    margin-top: 0;
+  }
+  #about-page h4 {
     margin-top: 0;
   }
 }
