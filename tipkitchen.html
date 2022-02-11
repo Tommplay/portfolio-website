@@ -12,6 +12,7 @@
   <meta name="author" content="Tom Mansfield">
   <meta name="description" content="UX design portfolio showcase">
   <title>Thomas Mansfield UX Designer Berlin/Biel/Bern</title>
+  <script src="https://kit.fontawesome.com/509150fbac.js" crossorigin="anonymous"></script>
 </head>
 <div>
   <div>
@@ -31,15 +32,18 @@
     </div>
     <div>
       <div>
+        <div class="navtoggle" id="myNavtoggle">
         <img src="img/logo/tomsdinnerlogov1.jpg" class="logo" alt="Tom Mansfield">
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="tipkitchen.html">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
+      </div>
       </div>
     </div>
   </header>

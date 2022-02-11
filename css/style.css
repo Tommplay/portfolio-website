@@ -3,10 +3,11 @@
 }
 
 body {
-  background-color: #576672;
+  background-color: #eff0f0;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
+  /* colour background option 576672 */
   font-weight: 300;
   /* Sets the font weight to 300 */
   line-height: 1.6;
@@ -120,8 +121,7 @@ a:focus {
 
 header {
   background-color: #ffffff;
-  text-align: center;
-  padding: 10px 0px;
+  padding: 10px 0 4px;
   /* Adds a 10px inner spacing to all sides */
   /* padding: 10px 5px; Adds 10px to top & bottom and 5px to left and right */
   /* padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
@@ -130,10 +130,8 @@ header {
   -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.53);
   box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.53);
-  position: fixed;
-  width: 100%
+  position: fixed;width: 100%
 }
-
 .social-icons {
   list-style: none;
   padding: 0px;
@@ -149,22 +147,18 @@ header {
 }
 
 .logo {
-  width: 250px;
-  padding: 10px 0px 0px 8px;
+  max-width: 150px;
+  padding: 10px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
-  padding: 0 15px;
+  margin: 0;
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  padding: 0 16px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
@@ -186,6 +180,29 @@ nav:active {
   color: #994c30;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 #hero {
   background-color: #;
   padding: 20px 0;
@@ -255,7 +272,7 @@ brown: #332D02;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 65px;
 }
 
 /* ==============================
@@ -266,13 +283,28 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
+  .logo {
+    min-width: 250px;
+    padding: 10px 0px 0px 8px;
+  }
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-
+  nav > ul {
+  margin: 1em 0;
+}
+  nav>ul>li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
   main {
     padding-top: 99px;
   }
@@ -324,7 +356,10 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-
+  .logo {
+    min-width: 250px;
+    padding: 10px 0px 0px 8px;
+  }
   #index-page h3 {
     margin-top: 0;
   }
