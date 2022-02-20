@@ -1,6 +1,5 @@
-console.log("Welcome to my portfolio website");
-alert("Welcome to my portfolio website");
-console.log(thisVariableDoesntExist); // Will output undefined
+// alert("Welcome to my portfolio website");
+// console.log(thisVariableDoesntExist); // Will output undefined
 var emptyVariable = null;
 var notNullButAString = "null";
 console.log(doesntExist); // Outputs undefined
