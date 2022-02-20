@@ -38,6 +38,8 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+  margin-bottom: 0;
+
 }
 
 img {
@@ -308,7 +310,20 @@ Medium devices (640px and larger)
   main {
     padding-top: 99px;
   }
+  #hero h1 {
+    text-align: left;
+    /* Centers text */
+  }
 
+  #hero h3 {
+    text-align: left;
+    /* Centers text */
+  }
+
+  #hero h4 {
+    text-align: left;
+  }
+    /* Centers text */
   #hero {
     font-size: 18px;
     line-height: 1.6;
