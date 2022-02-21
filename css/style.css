@@ -32,7 +32,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  color: #858055;
+  color: #736E49;
 }
 
 h4 {
@@ -206,7 +206,7 @@ nav:active {
   padding: 0 0 10px;
 }
 #hero {
-  background-color: #;
+  background-color: #eff0f0;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -343,10 +343,10 @@ Medium devices (640px and larger)
   }
 
   #about-page h3 {
-    margin-top: 4;
+    margin-top: 4px;
   }
 
-  #about-page h4
+  #about-page h4 {
 }
 
 /* ==============================
