@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="author" content="Tom Mansfield">
   <meta name="description" content="UX design portfolio showcase">
@@ -24,13 +24,14 @@
     <div>
       <div>
         <div class="navtoggle" id="myNavtoggle">
-          <img src="img/logo/tomsdinnerlogov1.jpg" class="logo" alt="Tom Mansfield">
+          <a href="/" title="return to homepage">
+          <img src="/img/logo/tomsdinnerlogov1.jpg" class="logo" alt="Tom Mansfield">
+          </a>
           <nav>
             <ul>
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="tipkitchen.html">Projects</a></li>
-              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="/">Work</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
               <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul>
           </nav>
@@ -43,12 +44,8 @@
       <a href="#hero"></a>
       <div class="container">
 
-        <h3>Tom's dinner kicked off with a starter in copyediting, marketing and design.</h3>
-  <h3>Next up a main course of international proposals, contracts and project management with a side of transatlantic collaboration.</h3>
-          <h3>A short digestif for travelling, translation and writing precedes a dessert smorgesboard of cooking, catering and cuisine.</h3>
-          <h3>The whole dinner was accompanied by a fine bottle of User Experience and the Design Process</h3>
-          <h3>Next up, a UX feast!</h3>
-
+        <h3>Welcome to the portfolio of Tom Mansfield</h3>
+        <h4>UX Design, Project/Event Management, Copyediting, Translation and Catering</h4>
       </div>
     </div>
     <div class="container">
@@ -62,8 +59,8 @@
                 <div class="col-md-6 col-lg-7">
                   <!-- open first column (used for image) -->
                   <picture>
-                    <source srcset="img/tipkitchen/project-image-tipkitchen2.jpg" media="(max-width:767px)">
-                    <img src="img/tipkitchen/project-image-tipkitchen2.jpg" alt="TipKitchen Wireframes">
+                    <source srcset="/img/tipkitchen/project-image-tipkitchen2.jpg" media="(max-width:767px)">
+                    <img src="/img/tipkitchen/project-image-tipkitchen2.jpg" alt="TipKitchen Wireframes">
                   </picture>
                 </div><!-- end first column -->
                 <div class="col-md-6 col-lg-5">
@@ -77,11 +74,11 @@
                   </p>
                   <p>
                     <!-- open paragraph -->
-                    In order to create something useful, I conducted user interviews, established personas and user journeys, created user flows and sitemaps before designing low and mid-fidelity wireframes and an interactive prototype. Following
+                    I conducted user interviews, established personas and user journeys, created user flows and sitemaps before designing low and mid-fidelity wireframes and an interactive prototype. Following
                     moderated
                     usability testing, I designed high-fidelity wireframes and an interactive high-fidelity prototype along with style guides to hand-off to developers.
                   </p><!-- end paragraph -->
-                  <a href="tipkitchen.html" class="button">Read more</a>
+                  <a href="/tipkitchen" class="button">Read more</a>
                   <p>
                   </p><!-- button or link label -->
                 </div><!-- end second column -->
@@ -1369,7 +1366,7 @@
                     <!-- open paragraph -->
                     Animating the sun and the clouds with CSS
                   </p><!-- end paragraph -->
-                  <a href="tipkitchen.html" class="button">Read more</a><!-- button or link label -->
+                  <a href="/berlin" class="button">Read more</a><!-- button or link label -->
                 </div><!-- end second column -->
               </div>
             </div>
@@ -1384,22 +1381,22 @@
       <h2>Please get in touch</h2>
       <p>
         Do you like my work and want to discuss opportunities?</p>
-      <p>Call: <a href="tel:+411234567">+41 1234567</a> or Skype me at <a href="skype:tommansfield">tommansfield</a>.</p>
+      <p>Call: <a href="tel:+41782327379">+41782327379</a> or Skype me at <a href="skype:tommansfield">tommansfield</a>.</p>
       <p>Prefer sending an email?</p>
       <div>
-        <a href="mailto:tom@tommansfield.com" class="button contact">Email me</a>
+        <a href="mailto:mansfield.thom@gmail.com" class="button contact">Email me</a>
       </div>
       <div>
         <!--Social Media Layout and Placeholders-->
         <ul class="social-icons">
           <li><a href="https://www.linkedin.com/in/thomas-mansfield-07654921/" target="_blank">
-              <img src="img/socialmedia/linkedin.png" alt="linkedin social media" class="social-icon">
+              <img src="/img/socialmedia/linkedin.png" alt="linkedin social media" class="social-icon">
             </a></li>
           <li><a href="https://www.behance.net/gallery/133209223/TipKitchen-UX?tracking_source=search_projects_recommended%7CTipKitchen" target="_blank">
-              <img src="img/socialmedia/behance.png" alt="behance socialmedia" class="social-icon">
+              <img src="/img/socialmedia/behance.png" alt="behance socialmedia" class="social-icon">
             </a></li>
           <li><a href="https://www.facebook.com/tommplay" target="_blank">
-              <img src="img/socialmedia/facebook.png" alt="facebook scoialmedia" class="social-icon">
+              <img src="/img/socialmedia/facebook.png" alt="facebook scoialmedia" class="social-icon">
             </a></li>
         </ul>
       </div>
@@ -1407,7 +1404,7 @@
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+  <script src="/js/scripts.js"></script>
 </body>
 
 </html>

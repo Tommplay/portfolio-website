@@ -166,18 +166,18 @@ nav>ul>li>a {
   color: #4a4a4a;
 }
 
-nav:hover {
+nav>ul>li>a:hover {
   color: #cc6540;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
-nav:visited {
+nav>ul>li>a:visited {
   /* visited link */
   color: #20313F;
 }
 
-nav:active {
+nav>ul>li>a:active {
   /* selected link */
   color: #994c30;
 }
